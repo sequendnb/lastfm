@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 
-import Header from './Components/Header/Header';
-import Main from './Components/Main';
-import './App.css';
+import Search from './Search/Search';
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <Header/>
-        <Main/>
+      	<div className="row pt-3">
+      		<div className="col-md-12">
+      			<Search />
+      		</div>
+      	</div>
       </div>
     );
   }
