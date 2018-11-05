@@ -1,0 +1,19 @@
+.container {
+	overflow-x:hidden;
+}
+
+.artistName {
+	text-transform: uppercase;
+	font-weight:800;
+	color:#444;
+	font-size:64px;
+}
+
+@media (max-width: 414px) {
+  .artistName {
+  	font-size:48px;
+  }
+}
+
+
+ 

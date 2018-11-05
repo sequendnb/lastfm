@@ -1,13 +1,13 @@
 .btn-custom {
-	background:#ffcc00;
-	transition:all .05s;
+  background:#ffcc00;
+  transition:all .05s;
 }
 .btn-custom a, a, a:visited {
-	color:#000;
+  color:#000;
 }
 .btn-custom:hover {
-	background:#444444;
-	color:#fefefe;
+  background:#444444;
+  color:#fefefe;
 }
 .form-control {
   font-size:14px;
@@ -18,14 +18,18 @@
   border-radius:0;
 }
 .resultsRow {
-	margin-top:2em;
+  margin-top:2em;
+}
+.artistCard {
+  padding:10px;
+  width:100%;
 }
 
 @media (max-width: 574px) {
   .form-control {
-	margin-bottom:1em;
+  margin-bottom:1em;
   }
   .form-control input {
-  	min-width:100%!important;
+    min-width:100%!important;
   }
 }

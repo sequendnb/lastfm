@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Header from '../Header/Header';
 import Search from './Search';
+import ResultItem from './ResultItem';
 
 class SearchResults extends Component {
 
@@ -49,9 +50,7 @@ class SearchResults extends Component {
     const resultItem = this.state.results.map(function (item, index) {
       return (
 
-        <tr key={index}>
-          <td>{item.name}</td>
-        </tr>
+        <ResultItem key={index} item={item} index={index} />
       )
     })
     
@@ -70,11 +69,9 @@ class SearchResults extends Component {
 
               <div className="row resultsRow pt-2">
               <div className="col-md-12" dangerouslySetInnerHTML={this.check()} />
-                <table>
-                  <tbody>
-                  {resultItem} 
-                  </tbody>
-                </table>
+              
+                {resultItem} 
+              
               </div>
             </div>
 

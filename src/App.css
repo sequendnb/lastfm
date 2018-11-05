@@ -1,0 +1,18 @@
+.grayFont {
+	color:#777;
+	font-size:12px;
+}
+
+.btn-dark {
+	background:#eee;
+	border:none;
+	margin-left:.5em;
+	transition:all .05s;
+}
+
+@media (max-width: 410px) {
+  .btn-dark {
+  	margin-left:0;
+  	margin-top:1em;
+  }
+}

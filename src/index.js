@@ -5,7 +5,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './index.css';
 import App from './App';
 import SearchResults from './Components/Search/SearchResults';
-import NoMatch from './Components/NoMatch'
+import Artist from './Components/Artist/Artist';
+import NoMatch from './Components/NoMatch';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -17,6 +18,7 @@ ReactDOM.render((
     	<Switch>
 	    	<Route exact path='/' component={App}/>
 	    	<Route exact path='/results/:query' component={SearchResults}/>
+	    	<Route path='/artist/:artistName' component={Artist}/>
 	    	<Route component={NoMatch} />
 	    </Switch>
     </div>
